@@ -1,0 +1,10 @@
+^C:\USERS\ALEXM\DESKTOP\VULKAN ENGINE\CMAKEFILES\A908265CD932649F38C216A0965E8500\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/alexm/Desktop/Vulkan Engine" "-BC:/Users/alexm/Desktop/Vulkan Engine" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/alexm/Desktop/Vulkan Engine/0-Instance.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
