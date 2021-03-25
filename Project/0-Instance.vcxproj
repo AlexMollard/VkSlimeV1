@@ -313,8 +313,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\alexm\Desktop\Vulkan Engine\Main.cpp" />
-    <ClCompile Include="device.cpp" />
+    <ClCompile Include="Device.cpp" />
+    <ClCompile Include="Main.cpp" />
     <ClCompile Include="Pipeline.cpp" />
     <ClCompile Include="Window.cpp" />
     <ClCompile Include="WindowApplication.cpp" />
@@ -328,7 +328,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="device.h" />
+    <ClInclude Include="Device.h" />
     <ClInclude Include="Pipeline.h" />
     <ClInclude Include="Window.h" />
     <ClInclude Include="WindowApplication.h" />

@@ -1,4 +1,5 @@
 #pragma once
+#include "Device.h"
 #include "Window.h"
 #include "Pipeline.h"
 
@@ -11,5 +12,6 @@ public:
 	void run();
 private:
 	Window window{WIDTH, HEIGHT, "VSLIME BBY!"};
-	Pipeline pipeline{"Shaders/SimpleShader.vert.spv", "Shaders/SimpleShader.frag.spv"};
+	Device device{ window };
+	Pipeline pipeline{device, "Shaders/SimpleShader.vert.spv", "Shaders/SimpleShader.frag.spv", Pipeline::DefaultPipelineConfigInfo(WIDTH, HEIGHT) };
 };
